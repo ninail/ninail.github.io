@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "UTF-8">
+		<title>About us</title>
+		<link rel = "stylesheet" type="text/css" href = "css/style.css" />
+		<link rel = "stylesheet" type="text/css" href = "css/search.css" />
+		<link rel = "stylesheet" type="text/css" href = "css/menu_point_style.css" />
+		<link rel = "stylesheet" type="text/css" href = "css/menu.css" />
+		
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/carousel.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.css" media="all" />
+		
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
+		<link href='http://fonts.googleapis.com/css?family=Coustard:900' rel='stylesheet' type='text/css' />
+		<link href='http://fonts.googleapis.com/css?family=Rochester' rel='stylesheet' type='text/css' />
+		
+		<script src="js/vendor/modernizr.js"></script>
+		<script src="js/modernizr.custom.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				
+				var $menu = $("#menu");
+					
+				$(window).scroll(function(){
+					if ( $(this).scrollTop() > 100 && $menu.hasClass("default") ){
+						$menu.fadeOut('fast',function(){
+							$(this).removeClass("default")
+								   .addClass("fixed transbg")
+								   .fadeIn('fast');
+						});
+					} else if($(this).scrollTop() <= 100 && $menu.hasClass("fixed")) {
+						$menu.fadeOut('fast',function(){
+							$(this).removeClass("fixed transbg")
+								   .addClass("default")
+								   .fadeIn('fast');
+						});
+					}
+				});//scroll
+				
+				$menu.hover(
+					function(){
+						if( $(this).hasClass('fixed') ){
+							$(this).removeClass('transbg');
+						}
+					},
+					function(){
+						if( $(this).hasClass('fixed') ){
+							$(this).addClass('transbg');
+						}
+					});//hover
+			});//jQuery
+		</script>
+	</head>
+	<body>
+		<div id="header"><div class="cont">
+			<a href="index.html"><p id="logo_title">Geomatics</p></a>
+		</div></div>
+		<div id="menu" class="default"><div class="cont">
+			<ul>
+				<li><a href="about_us.html">about us</a></li>
+				<li><a href="news.html">news</a></li>
+				<li><a href="education.html">education</a></li>
+				<li><a href="events.html">events</a></li>
+				<li><a href="projects.html">projects</a></li>
+				<li><a href="members.html">members</a></li>
+				<li><a href="adv.html">advisory council</a></li>
+				<li><a href="contacts.html">contacts</a></li>
+				<li>
+					<div id="sb-search" class="sb-search">
+						<form>
+							<input class="sb-search-input" placeholder="Search" type="text" value="" name="search" id="search">
+							<span class="sb-icon-search"></span>
+						</form>
+					</div>
+				</li>
+			</ul>
+		</div></div>
+		<div id="block_about"><div class="cont">
+			<div class="about_cap">Course caption</div>
+			<div class="main_text">
+				<p>Підрозділ створено з метою об’єднання українських фахівців в галузі геоматики, випускників навчальної програма канадсько-українського проекту «Закладення основи інфраструктури просторових даних: забезпечення бази в українському уряді для підтримки стабільного економічного зростання».</p>
+				<p>Основною ціллю підрозділу «Геоматика» є розбудова інтеграційної платформи для розвитку в Україні напрямів ГІС, геоматики та інфраструктури геопросторових даних. Формування експертного середовища в галузі ГІС та ІПД для обміну знаннями та консультування проектних програм.</p>
+				<p>Основними завданнями діяльності відокремленого підрозділу «Геоматика» є:</p>
+				<p>Відокремлений підрозділ «Геоматика» є складовою громадської організації «Світовий центр даних «Геоінформатика та сталий розвиток»» та діє на підставі положення про відокремлений підрозділ.</p>
+			</div>
+		</div></div>
+		<div id="footer"><div class="cont">
+			<div class="footer_col">
+				<p class="footer_cap">Overview</p>
+				<ul class="footer_menu">
+					<li><a href="">Data</a></li>
+					<li><a href="">Services</a></li>
+					<li><a href="">Partners</a></li>
+					<li><a href="">Sitemap</a></li>
+					<li><a href="">Mail to us</a></li>
+					<li><a href="">Login for partners</a></li>
+				</ul>
+			</div>
+			<div class="footer_col">
+				<p class="footer_cap">Who we are?</p>
+				<p class="footer_info">WDC Ukraine is a part of World Data Center System of the International Council of Science (ICSU), and acts according to the “WDC System Guide”.</p>
+			</div>
+			<div class="footer_col">
+				<p class="footer_cap">Contact information</p>
+				<p class="footer_info">№37, b. 6, NTUU “KPI”, Peremohy ave., 03056, Kyiv, Ukraine (map).</p>
+				<p class="footer_info">Phone: (+380 44) 406 8014 | Fax: (+380 44) 
+				406 8153<br />mail@wdc.org.ua</p>
+			</div>
+	</div></div>
+	<div id="copyright"><div class="cont">
+		<p>© 2008—15, World Data Center, IASA, NTUU “KPI“</p>
+	</div></div>
+	
+	
+		
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<!-- the jScrollPane script -->
+		<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+		<script type="text/javascript" src="js/jquery.contentcarousel.js"></script>
+		<script type="text/javascript">
+			$('#ca-container').contentcarousel();
+		</script>
+		<script src="js/classie.js"></script>
+		<script src="js/uisearch.js"></script>
+		<script>
+			new UISearch( document.getElementById( 'sb-search' ) );
+		</script>
+		<script src="js/vendor/jquery.js"></script>
+	</body>
+</html>

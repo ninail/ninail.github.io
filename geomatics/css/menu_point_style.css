@@ -1,0 +1,134 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
+@import url(http://fonts.googleapis.com/css?family=Lora);
+
+#footer, #news_row  {
+	margin-top: 0px;
+}
+#block_about {
+	background: #fff;
+	padding: 25px 0;
+}
+.about_cap {
+	color: #018577;
+	font-family: Lora;
+	text-align: center;
+	font-size: 28px;
+}
+.main_text {
+	width: 1000px;
+	margin: 10px auto;
+	padding: 0 50px 25px 50px;
+	color: #888;
+	text-indent: 1.5em;
+}
+.main_text p {
+	font-family: Lora;
+	font-size: 14px;
+	line-height: 1.5;
+	padding: 5px 0;
+	text-align: justify;
+}
+.main_text h1 {
+	font-family: Lora;
+	font-size: 32px;
+	line-height: 1.5;
+	padding: 0;
+	text-align: center;
+	color: #018577;
+}
+.main_text ul {
+	padding: 5px 30px;
+}
+.main_text li {
+	font-family: Lora;
+	font-size: 14px;
+	line-height: 1.5;
+	padding: 0 10px;
+}
+.main_text li a{
+	color: #888;
+	font-family: Lora;
+}
+.main_text li a:hover{
+	color: #018577;
+	font-family: Lora;
+}
+.person {
+	vertical-align: top;
+	width: 386px;
+	min-height: 140px;
+	text-align: center;
+	margin: 10px 0;
+	
+}
+.person img {
+	width: 120px;
+	height: 120px;
+	border-radius: 60px;
+	margin: 10px 133px;
+}
+.pers_name {
+	color: #018577;
+	font-family: Droid Sans;
+	font-size: 20px;
+	width: 366px;
+	margin: 10px;
+}
+.pers_info {
+	color: #888;
+	font-family: Droid Sans;
+	font-size: 14px;
+	line-height: 1.5;
+	width: 366px;
+	height: 100px;
+	margin: 10px;
+	border-bottom: 1px solid #018577;
+}
+#list_letter_members {
+	list-style-type: none;
+	margin: 20px auto;
+	text-align: center;
+}
+#list_letter_members a li{
+	display: inline-block;
+	margin: 5px;
+	width: 30px;
+	height: 30px;
+	padding-top: 5px;
+	font-size: 20px;
+}
+#list_letter_members a {
+	width: 30px;
+	height: 30px;
+	padding-top: 5px;
+	color: #018577;
+	transition: .5s;
+}
+#list_letter_members a:hover li{
+	width: 30px;
+	height: 30px;
+	padding-top: 5px;
+	background: rgba(1, 80, 73, 0.4);
+	color: #fff;
+	transition: .5s;
+}
+.list_members table{
+	color: #888;
+	font-size: 16px;
+	font-family: Droid Sans;
+	line-height: 1.5;
+}
+.table_caption td {
+	color: #018577;
+	font-weight: bold;
+	border-bottom: 1px solid #018577;
+}
+.list_members table tr td {
+	padding: 8px;
+}
+.gallery img {
+	margin: 5px;
+}
+.gallery {
+	margin-top: 15px;
+}

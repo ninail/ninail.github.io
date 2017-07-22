@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "UTF-8">
+		<title>Geomatics</title>
+		<link rel = "stylesheet" type="text/css" href = "css/style.css" />
+		<link rel = "stylesheet" type="text/css" href = "css/search.css" />
+		<link rel = "stylesheet" type="text/css" href = "css/menu.css" />
+		
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/carousel.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.css" media="all" />
+		
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
+		<link href='http://fonts.googleapis.com/css?family=Coustard:900' rel='stylesheet' type='text/css' />
+		<link href='http://fonts.googleapis.com/css?family=Rochester' rel='stylesheet' type='text/css' />
+		
+		<script src="js/vendor/modernizr.js"></script>
+		<script src="js/modernizr.custom.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				
+				var $menu = $("#menu");
+					
+				$(window).scroll(function(){
+					if ( $(this).scrollTop() > 100 && $menu.hasClass("default") ){
+						$menu.fadeOut('fast',function(){
+							$(this).removeClass("default")
+								   .addClass("fixed transbg")
+								   .fadeIn('fast');
+						});
+					} else if($(this).scrollTop() <= 100 && $menu.hasClass("fixed")) {
+						$menu.fadeOut('fast',function(){
+							$(this).removeClass("fixed transbg")
+								   .addClass("default")
+								   .fadeIn('fast');
+						});
+					}
+				});//scroll
+				
+				$menu.hover(
+					function(){
+						if( $(this).hasClass('fixed') ){
+							$(this).removeClass('transbg');
+						}
+					},
+					function(){
+						if( $(this).hasClass('fixed') ){
+							$(this).addClass('transbg');
+						}
+					});//hover
+			});//jQuery
+		</script>
+	</head>
+	<body>
+		<div id="header"><div class="cont">
+			<a href="index.html"><p id="logo_title">Geomatics</p></a>
+		</div></div>
+		<div id="menu" class="default"><div class="cont">
+			<ul>
+				<li><a href="about_us.html">about us</a></li>
+				<li><a href="news.html">news</a></li>
+				<li><a href="education.html">education</a></li>
+				<li><a href="events.html">events</a></li>
+				<li><a href="projects.html">projects</a></li>
+				<li><a href="members.html">members</a></li>
+				<li><a href="adv.html">advisory council</a></li>
+				<li><a href="contacts.html">contacts</a></li>
+				<li>
+					<div id="sb-search" class="sb-search">
+						<form>
+							<input class="sb-search-input" placeholder="Search" type="text" value="" name="search" id="search">
+							<span class="sb-icon-search"></span>
+						</form>
+					</div>
+				</li>
+			</ul>
+		</div></div>
+		<div id="header_image"></div>
+		<div id="bg_info"><div class="cont">
+			<div id="space_name">
+				<p>geomatics</p>
+			</div>
+			<div id="space_info">
+				<p>Among the basic tasks of WDC-Ukraine there is collection, handling and storage of science data and giving access to it for usage both in science research and study process. That include contemporary tutoring technologies and resources of e-libraries and archives; remote access to own information resources for the wide circle of scientists from the universities and science institutions of Ukraine.</p>
+			</div>
+		</div></div>
+		<div id="news_row"><div class="cont">
+			<table cellspacing="0" cellpadding="0" border="0">
+				<tr>
+					<td class="news_img"></td>
+					<td>
+						<div class="news_row_cap">Scientific Seminar "System Research in Earth Sciences, Economics and Society 2015"</div>
+						<div class="news_text">January 30, in National Technical University of Ukraine “Kyiv Polytechnic Institute” the scientific seminar "System Research in Earth Sciences, Economics and Society 2015" was held.</div>
+					</td>
+					<td class="news_img"></td>
+					<td>
+						<div class="news_row_cap">Scientific Seminar "System Research in Earth Sciences, Economics and Society 2015"</div>
+						<div class="news_text">January 30, in National Technical University of Ukraine “Kyiv Polytechnic Institute” the scientific seminar "System Research in Earth Sciences, Economics and Society 2015" was held.</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="read_more">read more &gt;</td>
+					<td></td>
+					<td class="read_more">read more &gt;</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td colspan="4" class="read_all">read all news &gt;</td>
+				</tr>
+			</table>
+		</div></div>
+		<div id="courses"><div class="cont">
+			<div class="courses_cap">gis courses</div>		
+			<div class="container">
+			<div id="ca-container" class="ca-container">
+				<div class="ca-wrapper">
+					<div class="ca-item ca-item-1">
+						<div class="ca-item-main">
+							<div class="ca-icon"></div>
+							<h3>Introduction to GIS for SDI</h3>
+							<h4>
+								<span>The greatness of a nation and its moral progress can be judged by the way in which its animals are treated.</span>
+							</h4>
+								<a href="#" class="ca-more">more...</a>
+						</div>
+						<div class="ca-content-wrapper">
+							<div class="ca-content">
+								<h6>Introduction to GIS for SDI</h6>
+								<a href="#" class="ca-close">close</a>
+								<div class="ca-content-text">
+									<p>I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.</p>
+									<p>When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary, I throw myself down among the tall grass by the trickling stream;</p>
+									<p>She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
+								</div>
+								<ul>
+									<li><a href="#">Read more</a></li>
+									<li><a href="#">Share this</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="ca-item ca-item-2">
+						<div class="ca-item-main">
+							<div class="ca-icon"></div>
+							<h3>Database Management Systems for SDI</h3>
+							<h4>
+								<span>I hold that the more helpless a creature, the more entitled it is to protection by man from the cruelty of man.</span>
+							</h4>
+								<a href="#" class="ca-more">more...</a>
+						</div>
+						<div class="ca-content-wrapper">
+							<div class="ca-content">
+								<h6>Database Management Systems for SDI</h6>
+								<a href="#" class="ca-close">close</a>
+								<div class="ca-content-text">
+									<p>I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.</p>
+									<p>When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary, I throw myself down among the tall grass by the trickling stream;</p>
+									<p>She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
+								</div>
+								<ul>
+									<li><a href="#">Read more</a></li>
+									<li><a href="#">Share this</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="ca-item ca-item-3">
+						<div class="ca-item-main">
+							<div class="ca-icon"></div>
+							<h3>Spatial Cadastral Information Systems for SDI </h3>
+							<h4>
+								<span>I feel that spiritual progress does demand at some stage that we should cease to kill our fellow creatures for the satisfaction of our bodily wants.</span>
+							</h4>
+								<a href="#" class="ca-more">more...</a>
+						</div>
+						<div class="ca-content-wrapper">
+							<div class="ca-content">
+								<h6>Spatial Cadastral Information Systems for SDI</h6>
+								<a href="#" class="ca-close">close</a>
+								<div class="ca-content-text">
+									<p>I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.</p>
+									<p>When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary, I throw myself down among the tall grass by the trickling stream;</p>
+									<p>She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
+								</div>
+								<ul>
+									<li><a href="#">Read more</a></li>
+									<li><a href="#">Share this</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="ca-item ca-item-4">
+						<div class="ca-item-main">
+							<div class="ca-icon"></div>
+							<h3>GIS Project Management for SDI</h3>
+							<h4>
+								<span>A man is but the product of his thoughts what he thinks, he becomes.</span>
+							</h4>
+								<a href="#" class="ca-more">more...</a>
+						</div>
+						<div class="ca-content-wrapper">
+							<div class="ca-content">
+								<h6>GIS Project Management for SDI</h6>
+								<a href="#" class="ca-close">close</a>
+								<div class="ca-content-text">
+									<p>I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.</p>
+									<p>When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary, I throw myself down among the tall grass by the trickling stream;</p>
+									<p>She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
+								</div>
+								<ul>
+									<li><a href="#">Read more</a></li>
+									<li><a href="#">Share this</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="ca-item ca-item-5">
+						<div class="ca-item-main">
+							<div class="ca-icon"></div>
+							<h3>Spatial Modeling and Applications for SDI</h3>
+							<h4>
+								<span>A weak man is just by accident. A strong but non-violent man is unjust by accident.</span>
+							</h4>
+								<a href="#" class="ca-more">more...</a>
+						</div>
+						<div class="ca-content-wrapper">
+							<div class="ca-content">
+								<h6>Spatial Modeling and Applications for SDI</h6>
+								<a href="#" class="ca-close">close</a>
+								<div class="ca-content-text">
+									<p>I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.</p>
+									<p>When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary, I throw myself down among the tall grass by the trickling stream;</p>
+									<p>She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
+								</div>
+								<ul>
+									<li><a href="#">Read more</a></li>
+									<li><a href="#">Share this</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="ca-item ca-item-6">
+						<div class="ca-item-main">
+							<div class="ca-icon"></div>
+							<h3>Web GIS and Geoportals for SDI</h3>
+							<h4>
+								<span>An error does not become truth by reason of multiplied propagation, nor does truth become error because nobody sees it.</span>
+			
+			</h4>
+								<a href="#" class="ca-more">more...</a>
+						</div>
+						<div class="ca-content-wrapper">
+							<div class="ca-content">
+								<h6>Web GIS and Geoportals for SDI</h6>
+								<a href="#" class="ca-close">close</a>
+								<div class="ca-content-text">
+									<p>I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.</p>
+									<p>When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary, I throw myself down among the tall grass by the trickling stream;</p>
+									<p>She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
+								</div>
+								<ul>
+									<li><a href="#">Read more</a></li>
+									<li><a href="#">Share this</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div></div>
+		<div id="partners"><div class="cont">
+			<div class="partners_cap">partners</div>
+			<div id="partners_blocks">
+				<a href="http://kpi.ua/en" target="_blank"><div class="part_block part_img_1">
+					<div class="overlay_block">
+						<div class="over_cap">National Technical University of Ukraine “KPI”</div>
+						<div class="over_text">National Technical University of Ukraine “Kyiv Polytechnic Institute” is one of the oldest and biggest technical universities in Europe and the world.</div>
+					</div>
+				</div></a>
+				<a href="http://www.viu.ca/" target="_blank"><div class="part_block part_img_2">
+					<div class="overlay_block">
+						<div class="over_cap">Vancouver Island University</div>
+						<div class="over_text">Vancouver Island University is a Canadian public university serving in Vancouver Island and coastal British Columbia. Established in 1969 as Malaspina College, it has grown into a university that plays an important role in the educational, cultural, and economic life of the region.</div>
+					</div>
+				</div></a>
+				<a href="http://www.univ.kiev.ua/en/" target="_blank"><div class="part_block part_img_3">
+					<div class="overlay_block">
+						<div class="over_cap">Taras Shevchenko National University of Kyiv</div>
+						<div class="over_text">Taras Shevchenko National University of Kyiv is today a classic university with a distinct research profile, and the leading contemporary academic and educational hub of Ukraine. With the independent Ukrainian nation arising, the University is facing new challenges and responsibilities.</div>
+					</div>
+				</div></a>
+				<a href="http://www.ukrmap.com.ua/en/" target="_blank"><div class="part_block part_img_4">
+					<div class="overlay_block">
+						<div class="over_cap">SSPE "Kartographia"</div>
+						<div class="over_text">SSPE “Kartographia” is the leading cartographic enterprise in Ukraine, a powerful research and production company employing highly-skilled specialists, producing over 200 names of cartographic products every year, and making substantial contribution to development of Ukrainian and world cartography.</div>
+					</div>
+				</div></a>
+				<a href="http://spark.kpi.ua/en" target="_blank"><div class="part_block part_img_5">
+					<div class="overlay_block">
+						<div class="over_cap">Science Park “Kyivska Politechnika”</div>
+						<div class="over_text">Science Park "Kyiv Polytechnic" - is a legal entity that was created by the initiative of the National Technical University of Ukraine "Kyiv Polytechnic Institute" for purposes of organization, coordination and management of such process as commercialization of university research.</div>
+					</div>
+				</div></a>
+				<a href="http://wdc.org.ua/en" target="_blank"><div class="part_block part_img_6">
+					<div class="overlay_block">
+						<div class="over_cap">WDC-Ukraine</div>
+						<div class="over_text">WDC-Ukraine is a part of World Data Center System of the International Council of Science (ICSU), and acts according to the “WDC System Guide”.</div>
+					</div>
+				</div></a>
+			</div>
+		</div></div>
+		<div id="footer"><div class="cont">
+			<div class="footer_col">
+				<p class="footer_cap">Overview</p>
+				<ul class="footer_menu">
+					<li><a href="">Data</a></li>
+					<li><a href="">Services</a></li>
+					<li><a href="">Partners</a></li>
+					<li><a href="">Sitemap</a></li>
+					<li><a href="">Mail to us</a></li>
+					<li><a href="">Login for partners</a></li>
+				</ul>
+			</div>
+			<div class="footer_col">
+				<p class="footer_cap">Who we are?</p>
+				<p class="footer_info">WDC Ukraine is a part of World Data Center System of the International Council of Science (ICSU), and acts according to the “WDC System Guide”.</p>
+			</div>
+			<div class="footer_col">
+				<p class="footer_cap">Contact information</p>
+				<p class="footer_info">№37, b. 6, NTUU “KPI”, Peremohy ave., 03056, Kyiv, Ukraine (map).</p>
+				<p class="footer_info">Phone: (+380 44) 406 8014 | Fax: (+380 44) 
+				406 8153<br />mail@wdc.org.ua</p>
+			</div>
+	</div></div>
+	<div id="copyright"><div class="cont">
+		<p>© 2008—15, World Data Center, IASA, NTUU “KPI“</p>
+	</div></div>
+	
+	
+		
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<!-- the jScrollPane script -->
+		<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+		<script type="text/javascript" src="js/jquery.contentcarousel.js"></script>
+		<script type="text/javascript">
+			$('#ca-container').contentcarousel();
+		</script>
+		<script src="js/classie.js"></script>
+		<script src="js/uisearch.js"></script>
+		<script>
+			new UISearch( document.getElementById( 'sb-search' ) );
+		</script>
+		<script src="js/vendor/jquery.js"></script>
+	</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "UTF-8">
+		<title>News</title>
+		<link rel = "stylesheet" type="text/css" href = "css/style.css" />
+		<link rel = "stylesheet" type="text/css" href = "css/search.css" />
+		<link rel = "stylesheet" type="text/css" href = "css/menu_point_style.css" />
+		<link rel = "stylesheet" type="text/css" href = "css/menu.css" />
+		
+		<link rel="stylesheet" type="text/css" href="scripts/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+		
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/carousel.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.css" media="all" />
+		
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
+		<link href='http://fonts.googleapis.com/css?family=Coustard:900' rel='stylesheet' type='text/css' />
+		<link href='http://fonts.googleapis.com/css?family=Rochester' rel='stylesheet' type='text/css' />
+		
+		
+		<script src="js/vendor/modernizr.js"></script>
+		<script src="js/modernizr.custom.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				
+				var $menu = $("#menu");
+					
+				$(window).scroll(function(){
+					if ( $(this).scrollTop() > 100 && $menu.hasClass("default") ){
+						$menu.fadeOut('fast',function(){
+							$(this).removeClass("default")
+								   .addClass("fixed transbg")
+								   .fadeIn('fast');
+						});
+					} else if($(this).scrollTop() <= 100 && $menu.hasClass("fixed")) {
+						$menu.fadeOut('fast',function(){
+							$(this).removeClass("fixed transbg")
+								   .addClass("default")
+								   .fadeIn('fast');
+						});
+					}
+				});//scroll
+				
+				$menu.hover(
+					function(){
+						if( $(this).hasClass('fixed') ){
+							$(this).removeClass('transbg');
+						}
+					},
+					function(){
+						if( $(this).hasClass('fixed') ){
+							$(this).addClass('transbg');
+						}
+					});//hover
+			});//jQuery
+		</script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+		<script type="text/javascript" src="js/js/spinners/spinners.min.js"></script>
+		<script type="text/javascript" src="js/js/lightview/lightview.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/lightview/lightview.css" />
+		<link rel="stylesheet" type="text/css" href="css/lightview/style.css" />
+	</head>
+	<body>
+		<div id="header"><div class="cont">
+			<a href="index.html"><p id="logo_title">Geomatics</p></a>
+		</div></div>
+		<div id="menu" class="default"><div class="cont">
+			<ul>
+				<li><a href="about_us.html">about us</a></li>
+				<li><a href="news.html">news</a></li>
+				<li><a href="education.html">education</a></li>
+				<li><a href="events.html">events</a></li>
+				<li><a href="projects.html">projects</a></li>
+				<li><a href="members.html">members</a></li>
+				<li><a href="adv.html">advisory council</a></li>
+				<li><a href="contacts.html">contacts</a></li>
+				<li>
+					<div id="sb-search" class="sb-search">
+						<form>
+							<input class="sb-search-input" placeholder="Search" type="text" value="" name="search" id="search">
+							<span class="sb-icon-search"></span>
+						</form>
+					</div>
+				</li>
+			</ul>
+		</div></div>
+		<div id="block_about"><div class="cont">
+			<div class="about_cap">Науковий семінар «Системні дослідження в науках про Землю, економіку та суспільство 2015»</div>
+			<div class="main_text">
+				<p>30 січня в Національному технічному університеті України «Київський політехнічний інститут» відбувся науковий семінар «Системні дослідження в науках про Землю, економіку та суспільство 2015».</p>
+				<p>Організаторами семінару виступили НТУУ «КПІ» та Інститут прикладного системного аналізу Національної академії наук України і Міністерства освіти і науки України.</p>
+				<p>Перед відкриттям семінару його учасники мали змогу ознайомитися з виставкою наукових видань у галузі інформатики і системних досліджень.</p>
+				<p>День проведення семінару збігся в часі з 65-річним ювілеєм ректора КПІ, директора ІПСА академіка НАН України Михайла Згуровського. Тож ця наукова зустріч стала для її учасників ще й нагодою особисто його поздоровити. А першим його привітав директор Інституту кібернетики імені В.М. Глушкова НАН України, академік-секретар Відділення інформатики НАН України Іван Сергієнко: «Тут зібралося майже все Відділення інформатики нашої Академії. Ми всі хотіли б привітати Михайла Захаровича з 65-річчям від дня народження, побажати йому здоров’я, успіхів його науковій школі, Національному технічному університету України «Київський політехнічний інститут» та Інституту прикладного системного аналізу!».</p>
+				<p>Михайло Згуровський виступив перед колегами з доповіддю «Участь Інституту прикладного системного аналізу МОН України та НАН України, Світового центру даних «Геоінформатика і сталий розвиток» у вирішенні актуальних проблем держави та міжнародній кооперації з системних досліджень». У ній було дано грунтовний аналіз напрямів діяльності та досягнень науковців, які нині торують шлях у галузі системних досліджень в Україні, та значущості їхніх досліджень для практики.</p>
+				<p>Про деталі та результати цих досліджень розповіли інші учасники семінару. Доповіді їх були присвячені широкому колу питань – від проблем системної стратегії гарантованої безпеки функціонування складних систем, алгоритмів системного узгодження даних різної природи, методів вимірювання глобальної загрози розповсюдження зброї, оцінювання екологічної сталості та безпеки в регіонах і промислових системах до використання геоінформаційних технологій для стратегічного планування сталого розвитку громад тощо. Тож з огляду на їх актуальність, матеріали семінару можуть бути використані при розробці управлінських рішень у багатьох напрямах економічного і суспільного розвитку держави та її регіонів.</p>
+			
+			<div class='demonstrations'>
+			  <a href='img/big/01.jpg' 
+				 class='lightview' 
+				 data-lightview-group='example'>
+				<img src='img/small/01.jpg' alt=''/>
+			  </a>
+			  
+			  <a href='img/big/01.jpg' 
+				 class='lightview' 
+				 data-lightview-group='example'>
+				<img src='img/small/01.jpg' alt=''/>
+			  </a>
+			  
+			  <a href='img/big/01.jpg' 
+				 class='lightview' 
+				 data-lightview-group='example'>
+				<img src='img/small/01.jpg' alt=''/>
+			  </a>
+
+			</div>
+
+			</div>
+		</div></div>
+		<div id="footer"><div class="cont">
+			<div class="footer_col">
+				<p class="footer_cap">Overview</p>
+				<ul class="footer_menu">
+					<li><a href="">Data</a></li>
+					<li><a href="">Services</a></li>
+					<li><a href="">Partners</a></li>
+					<li><a href="">Sitemap</a></li>
+					<li><a href="">Mail to us</a></li>
+					<li><a href="">Login for partners</a></li>
+				</ul>
+			</div>
+			<div class="footer_col">
+				<p class="footer_cap">Who we are?</p>
+				<p class="footer_info">WDC Ukraine is a part of World Data Center System of the International Council of Science (ICSU), and acts according to the “WDC System Guide”.</p>
+			</div>
+			<div class="footer_col">
+				<p class="footer_cap">Contact information</p>
+				<p class="footer_info">№37, b. 6, NTUU “KPI”, Peremohy ave., 03056, Kyiv, Ukraine (map).</p>
+				<p class="footer_info">Phone: (+380 44) 406 8014 | Fax: (+380 44) 
+				406 8153<br />mail@wdc.org.ua</p>
+			</div>
+	</div></div>
+	<div id="copyright"><div class="cont">
+		<p>© 2008—15, World Data Center, IASA, NTUU “KPI“</p>
+	</div></div>
+	
+	
+		
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<!-- the jScrollPane script -->
+		<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+		<script type="text/javascript" src="js/jquery.contentcarousel.js"></script>
+		<script type="text/javascript">
+			$('#ca-container').contentcarousel();
+		</script>
+		<script src="js/classie.js"></script>
+		<script src="js/uisearch.js"></script>
+		<script>
+			new UISearch( document.getElementById( 'sb-search' ) );
+		</script>
+		<script src="js/vendor/jquery.js"></script>
+	</body>
+</html>

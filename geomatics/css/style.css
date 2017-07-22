@@ -1,0 +1,248 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
+@import url(http://fonts.googleapis.com/css?family=Lora);
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Droid Sans;
+}
+a {
+	text-decoration: none;
+}
+.cont {
+	margin: 0 auto;
+	width: 1160px;
+}
+#header {
+	min-width: 1160px;
+	width: 100%;
+	height: 80px;
+	background: #fff;
+}
+#header p {
+	font-size: 30px;
+	padding-top: 20px;
+	font-family: Lora;
+	text-transform: uppercase;
+	color: #888;
+}
+#header_image {
+	height: 430px;
+	min-width: 1160px;
+	width: 100%;
+	background: url(../img/map.png) no-repeat;
+	background-position: 50%;
+	background-size: 100% 430px;
+}
+#bg_info {
+	background: rgba(0, 0, 0, 0.5);
+	min-width: 1160px;
+	width: 100%;
+	position: relative;
+	top: -300px;
+	padding: 20px 0;
+}
+#space_name{
+	display: inline-block;
+	vertical-align: top;
+	width: 20%;
+}
+#space_name p{
+	font-size: 30px;
+	color: #fff;
+	text-transform: uppercase; 
+	margin-top: 40px; 
+	font-family: Lora;
+}
+#space_info{
+	display: inline-block;
+	width: 50%;
+	margin-left: 29%;
+}
+#space_info p{
+	font-size: 14px;
+	color: white;
+	text-align: justify;
+	padding: 10px;
+	margin-top: 0px; 
+	line-height: 1.5;
+}
+#news_row {
+	min-width: 1160px;
+	width: 100%;
+	background: #fff;
+	margin-top: -165px;
+	padding: 50px 0 15px 0;
+}
+#news_row table {
+	width: 100%;
+}
+.news_img {
+	width: 215px;
+	height: 145px;
+	background: grey;
+}
+.news_row_cap {
+	padding: 0 20px 5px 10px;
+	color: #018577;
+	font-size: 17px;
+	font-family: Tunga;
+	line-height: 1;
+	font-weight: bold;
+}
+.news_text {
+	padding: 5px 20px 0 10px;
+	color: #121622;
+	font-size: 17px;
+	font-family: Tunga;
+	line-height: 1;
+}
+.read_more {
+	color: #018577;
+	font-size: 14px;
+	font-family: Tunga;
+	font-weight: bold;
+	padding-top: 5px;
+}
+.read_all {
+	color: #018577;
+	font-size: 14px;
+	font-family: Tunga;
+	font-weight: bold;
+	padding-top: 5px;
+	text-align: right;
+}
+#courses {
+	min-width: 1160px;
+	width: 100%;
+	background: #f1f5f8;
+	padding: 25px 0;
+	min-width: 1160px;
+	width: 100%;
+}
+.courses_cap {
+	text-transform: uppercase;
+	color: #018577;
+	font-family: Lora;
+	text-align: center;
+	font-size: 34px;
+}
+#partners {
+	min-width: 1160px;
+	width: 100%;
+	background: #c7def0;
+	padding: 25px 0;
+	padding-bottom: 40px;
+}
+.partners_cap {
+	text-transform: uppercase;
+	color: #018577;
+	font-family: Lora;
+	text-align: center;
+	font-size: 34px;
+	padding-bottom: 20px;
+}
+.part_block {
+	width: 384px;
+	height: 230px;
+	display: inline-block;
+	text-align: center;
+	
+}
+.part_img_1 {
+	background: url(../img/partner_1.png) no-repeat center center;
+}
+.part_img_2 {
+	background: url(../img/partner_2.png) no-repeat center center;
+}
+.part_img_3 {
+	background: url(../img/partner_3.png) no-repeat center center;
+}
+.part_img_4 {
+	background: url(../img/partner_4.png) no-repeat center center;
+}
+.part_img_5 {
+	background: url(../img/partner_5.png) no-repeat center center;
+}
+.part_img_6 {
+	background: url(../img/partner_6.png) no-repeat center center;
+}
+a .overlay_block, a .overlay_block .over_cap, a .overlay_block .over_text {
+	overflow: hidden;
+	display: none;
+}
+a:hover .overlay_block {
+	width: 100%;
+	height: 100%;
+	background: rgba(1, 80, 73, 0.7);
+	display: block;
+}
+a:hover .overlay_block .over_cap {
+	color: #fff;
+	font-size: 22px;
+	font-family: Tunga;
+	font-weight: bold;
+	padding: 10px 35px;
+	display: block;
+}
+a:hover .overlay_block .over_text {
+	color: #fff;
+	font-size: 16px;
+	font-family: Tunga;
+	padding: 5px 30px;
+	line-height: 1.2;
+	display: block;
+}
+#footer {
+	min-width: 1160px;
+	width: 100%;
+	background: #f1f5f8;
+	margin-top: -15px;
+	padding: 25px 0;
+}
+#footer .footer_col {
+	display: inline-block;
+	width: 364px;
+	vertical-align: top;
+	padding: 0 10px;
+}
+.footer_cap {
+	text-transform: uppercase;
+	color: #018577;
+	font-weight: bold;
+	font-family: Tunga;
+	font-size: 25px;
+}
+.footer_menu li {
+	list-style-type: none;
+	
+}
+.footer_menu {
+	margin-left: 0;
+}
+.footer_menu a {
+	color: #888;
+	font-size: 20px;
+	font-family: Tunga;
+	line-height: 1.5;
+}
+.footer_info {
+	color: #888;
+	font-size: 17px;
+	font-family: Tunga;
+	line-height: 1.5;
+	padding-bottom: 8px;
+}
+#copyright {
+	min-width: 1160px;
+	width: 100%;
+	background: #008aa7;
+	height: 46px;
+	padding: 24px 0 0 0;
+}
+#copyright p {
+	font-size: 12px;
+	color: #fff;
+	font-weight: bold;
+	font-family: Droid Sans;
+}
