@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<title></title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				
+				var $menu = $("#menu");
+					
+				$(window).scroll(function(){
+					if ( $(this).scrollTop() > 100 && $menu.hasClass("default") ){
+						$menu.fadeOut('fast',function(){
+							$(this).removeClass("default")
+								   .addClass("fixed transbg")
+								   .fadeIn('fast');
+						});
+					} else if($(this).scrollTop() <= 100 && $menu.hasClass("fixed")) {
+						$menu.fadeOut('fast',function(){
+							$(this).removeClass("fixed transbg")
+								   .addClass("default")
+								   .fadeIn('fast');
+						});
+					}
+				});//scroll
+				
+				$menu.hover(
+					function(){
+						if( $(this).hasClass('fixed') ){
+							$(this).removeClass('transbg');
+						}
+					},
+					function(){
+						if( $(this).hasClass('fixed') ){
+							$(this).addClass('transbg');
+						}
+					});//hover
+			});//jQuery
+		</script>
+	</head>
+	<body>
+		<div id="container">
+			<header>
+				<ul id="menu" class="default">
+					<a href="#"><li>home</li></a>
+					<a href="#"><li>contact</li></a>
+					
+					<a href="#"><li>about</li></a>
+					<a href="#"><li>portfolio</li></a>
+					
+				</ul>
+				<div><img src="img/logo.png" /></div>
+			</header>
+			<section>
+			
+			</section>
+		</div>
+	</body>
+</html>
