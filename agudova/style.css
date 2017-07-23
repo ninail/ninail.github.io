@@ -1,0 +1,284 @@
+html {
+	background: url(img/bg.png);
+	margin: 0;
+	padding:0;
+	font-family: AGAvalancheC;
+}
+a {
+	text-decoration: none;
+}
+#conteiner {
+	width: 507px;
+	margin: 0 auto;
+}
+#right_menu {
+	width: 80px;
+	position: relative;
+	top: -500px;
+	left: 460px;
+}
+#right_menu ul a li {
+	list-style-type: none;
+	margin-bottom: 20px;
+	color: rgba(0, 0, 0, .5);
+	transition: .5s;
+	font-size: 14px;
+}
+#right_menu ul .curr_right_menu li{
+	list-style-image: url(img/disc.png);
+	/*list-style-position: relative;
+	bottom: 5px;
+	right: 5px;*/
+}
+#right_menu ul a:hover li {
+	color: rgb(229, 38, 41);
+	transition: .5s;
+}
+#window {
+	margin: 0 auto;
+	width: 504px;
+	height: 674px;
+	margin-top: 10px;
+	background: url(img/window_main.png) no-repeat;
+}
+#logo {
+	width: 114px;
+	height: 104px;
+	position: relative;
+	left: 201px;
+	top: 50px;
+}
+#win_4 {
+	width: 373px;
+	height: 372px;
+	background: url(img/windows_4.png) no-repeat;
+	position: relative;
+	left: 70px;
+	top: 115px;
+}
+#win_2 {
+	width: 373px;
+	height: 372px;
+	background: url(img/windows_2.png) no-repeat;
+	position: relative;
+	left: 70px;
+	top: 115px;
+}
+#flowers {
+	width: 507px;
+	height: 104px;
+	background: url(img/flowers.png) no-repeat;
+	position: absolute;
+	top: 523px;
+	padding-right: 16px;
+	margin-left: -8px;
+}
+a .block_m4 {
+	width: 158px;
+	height: 170px;
+	background: rgba(0, 0, 0, 0);
+	transition: .5s;
+	display: inline-block;
+	color: black;
+	font-size: 14px;
+}
+a .block_m2 {
+	width: 157px;
+	height: 361px;
+	background: rgba(0, 0, 0, 0);
+	transition: .5s;
+	display: inline-block;
+	color: black;
+	font-size: 14px;
+}
+a .block_m4 p {
+	text-align: center;
+	padding-top: 60px;
+}
+a .block_m2 p {
+	text-align: center;
+	padding-top: 140px;
+}
+a .block_m4:hover {
+	background: rgba(0, 0, 0, .5);
+	transition: .5s;
+	color: white;
+}
+a .block_m2:hover {
+	background: rgba(0, 0, 0, .5);
+	transition: .5s;
+	color: white;
+}
+#block_m4_1 {
+	position: relative;
+	left: 2px;
+	top: 4px;
+}
+#block_m4_2 {
+	position: relative;
+	left: 46px;
+	top: 4px;
+}
+#block_m2_1 {
+	position: relative;
+	left: 3px;
+	top: 4px;
+}
+#block_m2_2 {
+	position: relative;
+	left: 47px;
+	top: 4px;
+}
+#block_m4_3 {
+	position: relative;
+	left: 2px;
+	top: 24px;
+}
+#block_m4_4 {
+	position: relative;
+	left: 46px;
+	top: 24px;
+}
+#soc_net {
+	width: 200px;
+	height: 30px;
+	position: relative;
+	margin: 0 auto;
+	top: -50px;
+}
+a .btn_soc {
+	width: 31px;
+	height: 31px;
+	background: url(img/btn_soc.png) no-repeat;
+	display: inline-block;
+	margin: 0 8px;
+}
+a .btn_soc #tw {
+	width: 16px;
+	height: 16px;
+	background: url(img/twitter_gr.png) no-repeat;
+	position: relative;
+	top: 7px;
+	left: 7px;
+	transition: .5s;
+}
+a:hover .btn_soc #tw {
+	background: url(img/twitter_r.png) no-repeat;
+	transition: .5s;
+}
+a .btn_soc #fb {
+	width: 16px;
+	height: 16px;
+	background: url(img/fb_gr.png) no-repeat;
+	position: relative;
+	top: 7px;
+	left: 6px;
+	transition: .5s;
+}
+a:hover .btn_soc #fb {
+	background: url(img/fb_r.png) no-repeat;
+	transition: .5s;
+}
+a .btn_soc #go {
+	width: 16px;
+	height: 16px;
+	background: url(img/google_gr.png) no-repeat;
+	position: relative;
+	top: 8px;
+	left: 7px;
+	transition: .5s;
+}
+a:hover .btn_soc #go {
+	background: url(img/google_r.png) no-repeat;
+	transition: .5s;
+}
+a .btn_soc #vk {
+	width: 17px;
+	height: 17px;
+	background: url(img/vk_gr.png) no-repeat;
+	position: relative;
+	top: 7px;
+	left: 7px;
+	transition: .5s;
+}
+a:hover .btn_soc #vk {
+	background: url(img/vk_r.png) no-repeat;
+	transition: .5s;
+}
+#line {
+	width: 408px;
+	height: 4px;
+	background: url(img/line_bread.png) no-repeat;
+	margin: 80px auto 12px auto;
+}
+#line_2 {
+	width: 408px;
+	height: 4px;
+	background: url(img/line_bread.png) no-repeat;
+	margin: 12px auto;
+}
+#bread {
+	width: 408px;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 13px;
+}
+#port_cont {
+	width: 432px;
+	min-height: 214px;
+	margin: 0 auto 30px auto;
+}
+.port_win {
+	width: 194px;
+	height: 194px;
+	margin: 10;
+	text-align: center;
+	display: inline-block;
+}
+.overlay {
+	width: 194px;
+	height: 194px;
+	background-color: rgba(0, 0, 0, 0.2);
+	position: relative;
+	top: 0px;
+	left: 0;
+	transition: .5s;
+}
+.port_bg {
+	width: 194px;
+	height: 194px;
+	position: relative;
+	top: -194px;
+	left: 0;
+	background: url(img/port_block.png) no-repeat;
+}
+.port_win a .overlay:hover {
+	background-color: rgba(0, 0, 0, 0);
+	transition: .5s;
+}
+#soc_net_p {
+	width: 200px;
+	height: 30px;
+	margin: 0 auto -120px auto;
+}
+#port_rm {
+	height: 20px;
+	position: relative;
+	top: 474px;
+	left: 0px;
+}
+#post_cont {
+	width: 402px;
+	min-height: 100px;
+	margin: 0 auto;
+}
+.post {
+	font-size: 12px;
+	margin-bottom: 30px;
+}
+.data {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+
