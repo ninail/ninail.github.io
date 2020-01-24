@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="stylesheet" href="css/main.min.css">
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="container-flex">
+				<div class="logo"><img src="img/logo.png" alt="star company logo"></div>
+				<div class="login-form">
+					<input id="login-btn" type="submit" value="Log in" form="login" onmousedown="openlogin()">
+					<form id="login">
+						<div class="form-block">
+							<input class="data-field" type="text" name="email" placeholder="Email" required>
+							<div class="valid-info">Please enter a valid email address</div>
+						</div>
+						<div class="form-block">
+							<input class="data-field" type="password" name="pass" placeholder="Password" required><a class="note" href="#">Forgot your password?</a>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="container-flex main-block">
+				<p class="title"><span>StarCompany DESIGNS, MANUFACTURES AND</span><br>Launches Advanced Rockets and  Spacecrafts</p>
+				<form id="regForm" action="">
+					<button id="prevBtn" type="button" onclick="nextPrev(-1)"></button>
+					<div class="row">
+						<div class="tab">
+							<label class="arrow">Who are you</label>
+							<select name="prof" oninput="this.className = ''">
+								<option value="Engineer">Engineer</option>
+								<option value="Business Development Executive">Business Development Executive</option>
+								<option value="Office Manager/PA">Office Manager/PA</option>
+								<option value="Accountant">Accountant</option>
+								<option value="VR Designer">VR Designer</option>
+							</select>
+						</div>
+						<div class="tab">
+							<label>What is your age?</label>
+							<select name="age" oninput="this.className = ''">
+								<option value="18">18</option>
+								<option value="19">19</option>
+								<option value="20">20</option>
+								<option value="21">21</option>
+								<option value="22">22</option>
+							</select>
+						</div>
+						<div class="tab">
+							<label>I am from</label>
+							<input name="place" type="text" oninput="this.className = ''">
+							<p>E.g.: New Roads or 70760<br>We don’t use postal addresses to contact members directly!</p>
+						</div>
+						<div class="tab">
+							<label>Your email adress</label>
+							<input placeholder="Input your email" name="email" type="text" oninput="this.className = ''">
+						</div>
+						<div class="tab">
+							<label>Create your password</label>
+							<input name="pass" type="password" oninput="this.className = ''">
+							<p>By clicking the button above you agree to our <a href=''>Terms of Use</a> and <a href=''>Privacy Policy</a> including use of cookies and to receive newsletters, account updates and offers sent by StarCompany.</p>
+						</div>
+					</div>
+					<div class="progress"><span class="step"></span><span class="step"></span><span class="step"></span><span class="step"></span><span class="step"></span></div>
+					<button id="nextBtn" type="button" onclick="nextPrev(1)">Next step</button>
+				</form>
+			</div>
+		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="js/scripts.min.js"></script>
+	</body>
+</html>
